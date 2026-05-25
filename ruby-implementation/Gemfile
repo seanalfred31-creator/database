@@ -1,0 +1,33 @@
+source 'https://rubygems.org'
+
+ruby '~> 3.2.0'
+
+# Core dependencies
+gem 'pg', '~> 1.5'
+gem 'sequel', '~> 5.75'
+gem 'dotenv', '~> 2.8'
+
+# Web server
+gem 'puma', '~> 6.4'
+gem 'rack', '~> 3.0'
+
+# ORM options
+gem 'activerecord', '~> 7.1.0'
+gem 'rom', '~> 5.3'
+gem 'rom-sql', '~> 3.6'
+
+# Async support
+gem 'async', '~> 2.6'
+gem 'async-io', '~> 1.38'
+gem 'falcon', '~> 0.43'
+
+# Utilities
+gem 'dry-monads', '~> 1.6'
+gem 'dry-struct', '~> 1.6'
+gem 'dry-types', '~> 1.7'
+
+group :development, :test do
+  gem 'debug'
+  gem 'rspec', '~> 3.12'
+  gem 'benchmark-ips', '~> 2.12'
+end
